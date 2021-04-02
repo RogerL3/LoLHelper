@@ -30,7 +30,12 @@ namespace LoLHelper
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "LoLHelper", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { 
+                    Title = "LoLHelper", 
+                    Version = "v1" ,
+                    Description = "Swagger Demo for ValuesController"
+                }
+                );
             });
         }
 
